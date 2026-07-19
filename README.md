@@ -10,7 +10,7 @@ Curiosity is common. Contribution is curiosity with a method.
 
 ## Selected publications
 
-- Neves, G., et al. Journal of Aircraft. DOI [10.2514/1.C038629](https://doi.org/10.2514/1.C038629)
+- Neves, G., Bienemann, R., Barbosa de Araújo, T., Annes da Silva, R.G. Interchangeable Aircraft Framework for Propeller Integration and Aeropropulsive Studies. Journal of Aircraft, Article in Advance, 2026. DOI [10.2514/1.C038629](https://doi.org/10.2514/1.C038629)
 - Neves, G., Araujo, T.B., Sinnige, T., Annes da Silva, R.G. Decomposing Aeropropulsive Phenomena Governing Stability and Control Sizing of Aft-Propeller Aircraft. AIAA AVIATION 2026. DOI [10.2514/6.2026-4720](https://doi.org/10.2514/6.2026-4720)
 
 ## Find me
