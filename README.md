@@ -58,33 +58,13 @@ Version aware, didactic Python driver for the FlightStream panel method solver. 
 
 Latest release v0.4.0. [PyPI](https://pypi.org/project/pyflightstream/) and DOI [10.5281/zenodo.21482924](https://doi.org/10.5281/zenodo.21482924).
 
-### The workspace is open source too, not only the library
+### How they are built
 
-Both repositories commit the `.claude/` workspace I built to develop them: the agent charters, the skills, the hooks, and the guard scripts that enforce them. The library is what you install. The workspace is how it was built, and it is public for the same reason the code is. A method you cannot inspect is a method you cannot trust, and a solo maintainer who reviews only her own work has one documented failure mode: self review blindness.
+Both libraries are built with a disciplined AI assisted process. Independent reviewer roles that report findings and never edit, because the implementer must not be the only reviewer of the change. A loop that plans, develops, reviews, audits and hands off, in that order. Gates that refuse to close a work item without its review evidence. Every guard carries a mutation test whose only job is to prove the guard actually fails when it should, because an unverified guard is decoration.
 
-**Six agent charters.** Every one of them is read only. They report findings, they never edit, because the implementer must not be the only reviewer of the change.
+That process used to be committed alongside the code, on the reasoning that a method you cannot inspect is a method you cannot trust. I still hold the second half of that sentence. What changed is the first: the method turned out to be the part of this work that compounds, and publishing it by default meant giving away the asset while the artifacts it produces are the deliverable.
 
-| Agent | What it reviews |
-|---|---|
-| `architect-reviewer` | Structural conformance: public API, module boundaries, imports, dependencies |
-| `qa-engineer` | Test design in the ISTQB tradition, defect prevention rather than detection: whether the tests would catch the defects this change could introduce |
-| `vv-engineer` | Verification and validation in the tradition of AIAA G-077 and NASA-STD-7009: evidence is documented, never asserted |
-| `tech-writer` | Documentation currency and didactic quality: docs may never drift silently from the code, and facts live in one home |
-| `api-designer` | Interface ergonomics: signatures, CLI, error messages, and examples reviewed the way a UX designer reviews a screen |
-| `incident-analyst` | A failure that already happened. It finds the structural cause, designs the guard that makes recurrence impossible, and proves the guard blocks the original failure |
-
-**The process, as invocable skills.** The loop is `plan`, `develop`, `role-review`, `audit`, `handoff`, and it runs in that order.
-
-- `plan` keeps the plan ledger and the milestone map, and proposes the next work window.
-- `develop` executes one work item in the repository's own order: pin it to an authority, write the usage example, write the falsifying test and measure it RED on the base, minimal implementation, refactor, records in the same step, gate, commit.
-- `role-review` runs the applicable reviewer passes on the item's diff and drives every finding to fixed or registered. No work item closes without it.
-- `audit` sweeps the committed tree for drift against the specification and the adopted external guides, and turns each finding into an update, a deletion, or a plan item.
-- `handoff` closes the session: what was decided, what is open, the single next action. Context is a deliverable, so continuity is written, not hoped for.
-- `version-control` and `release` carry the commit and release sequences as templates, so an operator never reconstructs them under pressure.
-
-pyflightstream adds the skills its domain demands: `add-command`, `derive-requirements`, `fts-version-update`, `run-validity`, and `run-physics`, the last two of which spend a licensed solver seat and say so in their own metadata.
-
-**And the gates that make the process non optional.** Hooks refuse to let a work item close without its review attestation, and a set of guard scripts checks the release gate, the review rounds, the shipped surface, the side effect declarations, the version identity, and the pre push receipt. Each guard ships with a mutation test whose only job is to prove the guard actually fails when it should, because an unverified guard is decoration.
+So the method is no longer shipped incidentally with the libraries. What I publish about it is deliberate, and it is the didactic material above: [From Curiosity to Contribution](https://github.com/nevesgeovana/from-curiosity-to-wisdom/tree/main/from-curiosity-to-contribution) is the method taught properly, end to end on a real paper, and it is the export I maintain for exactly this purpose.
 
 What stays with me and is never delegated: product owner, domain expert, numerical analyst. The assistant drafts, derives, audits, and challenges. It does not decide.
 
@@ -93,9 +73,9 @@ What stays with me and is never delegated: product owner, domain expert, numeric
 Two workspaces are not public, and they are where most of the daily work happens.
 
 - **aeropropulsive-research**, my research workspace. Enumerated corpus and bibliography, a register of research questions, a logbook, and the planner that carries a question from an idea to a run to an analysis to a deliverable. It is private because it holds material I cannot redistribute, not because the method is a secret. The method is the deck above.
-- **ClaudeCoordinator**, the coordination level above the libraries and the research workspace. It owns what belongs to no single repository, and it carries the methodology the others are built with: a process kit, a knowledge base, a scope registry that decides what may ever be published, and a scaffold that wires the process into a new project.
+- **The control level above them**, which owns what belongs to no single repository: the shared process, the knowledge base, the registry that decides what may ever be published, and the identity and evidence rules the others are built with. It is private, and it is where the method lives now.
 
-If you work in wind tunnel testing, aeropropulsive integration, or research automation and any of this is close to what you are trying to build, ask. I am glad to share the practical shortcuts, the templates, the reasoning behind a structural decision, and the mistakes that produced it. Reproducing a workflow should not cost you the two years it cost me.
+If you work in wind tunnel testing, aeropropulsive integration, or research automation, I am glad to talk about how to work well with an AI assistant: the reasoning behind a structural decision, the traps worth knowing, the mistakes that produced the rules. What I no longer hand over is the working method itself, charters and templates included. It took two years to build and it is the part I keep. The deck above is the version I chose to teach, and it is complete on its own terms.
 
 Open an issue in any of the public repositories above, or reach me on LinkedIn.
 
