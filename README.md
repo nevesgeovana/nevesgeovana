@@ -73,7 +73,7 @@ What stays with me and is never delegated: product owner, domain expert, numeric
 Two workspaces are not public, and they are where most of the daily work happens.
 
 - **geoverse-research**, my research workspace. Enumerated corpus and bibliography, a register of research questions, a logbook, and the planner that carries a question from an idea to a run to an analysis to a deliverable. It is private because it holds material I cannot redistribute, not because the method is a secret. The method is the deck above.
-- **The control level above them**, which owns what belongs to no single repository: the shared process, the knowledge base, the registry that decides what may ever be published, and the identity and evidence rules the others are built with. It is private, and it is where the method lives now.
+- **geoverse-goddess**, the control level above them. It owns what belongs to no single repository: the shared process, the knowledge base, the registry that decides what may ever be published, and the identity and evidence rules the others are built with. It is private, and it is where the method lives now.
 
 If you work in wind tunnel testing, aeropropulsive integration, or research automation, I am glad to talk about how to work well with an AI assistant: the reasoning behind a structural decision, the traps worth knowing, the mistakes that produced the rules. What I no longer hand over is the working method itself, charters and templates included. It took two years to build and it is the part I keep. The deck above is the version I chose to teach, and it is complete on its own terms.
 
